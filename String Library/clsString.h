@@ -75,5 +75,10 @@ public:
 	static short CountSpecificCharacter(std::string& text, char Ch, bool MatchCase = true);
 	short CountSpecificCharacter(char Ch, bool MatchCase = true);
 
+	//Operation (10):
+	//Is Vowel.
+	static bool isVowelAt(char Ch);
+	bool isVowel(int Index);
+
 
 };

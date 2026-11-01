@@ -190,3 +190,14 @@ short clsString::CountSpecificCharacter(char Ch, bool MatchCase)
 {
 	return CountSpecificCharacter(_Value, Ch, MatchCase);
 }
+
+//Operation (10):
+//Is Vowel.
+bool clsString::isVowelAt(char Ch)
+{
+	return std::string("aeiou").find(std::tolower(Ch)) != std::string::npos;
+}
+bool clsString::isVowel(int Index)
+{
+	return isVowelAt(_Value[Index]);
+}

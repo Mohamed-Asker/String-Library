@@ -6,12 +6,14 @@
 int main()
 {
 	std::string S1 = "Mohamed Askar From - @";
-	clsString S2;
-	S2.Value = "Mohamed Askar 33 From Kafr * &^";
+	clsString S2("Mohamed Askar 33 From Kafr * &^");
 
 
-	std::cout << S2.CountSpecificCharacter('m') << "\n";
-	std::cout << clsString::CountSpecificCharacter(S1, 'a') << "\n";
+	std::cout << S2.isVowel(0) << "\n"; 
+	std::cout << S2.isVowel(1) << "\n";
+	std::cout << S2.isVowel(2) << "\n";
+	std::cout << S2.isVowel(3) << "\n";
+	
 	
 
 
