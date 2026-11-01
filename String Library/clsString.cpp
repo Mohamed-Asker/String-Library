@@ -217,3 +217,18 @@ int clsString::CountVowel()
 {
 	return CountVowel(_Value);
 }
+
+//Operation (12):
+//Print All Vowel.
+void clsString::PrintAllVowelInString(std::string& text)
+{
+	for (int i = 0; i < text.length(); i++)
+		if (isVowelAt(text[i]))
+			std::cout << std::left << std::setw(3) << text[i];
+
+	std::cout << std::endl;
+}
+void clsString::PrintAllVowelInString()
+{
+	PrintAllVowelInString(_Value);
+}

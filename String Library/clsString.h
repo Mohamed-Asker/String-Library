@@ -85,4 +85,9 @@ public:
 	static int CountVowel(std::string& text);
 	int CountVowel();
 
+	//Operation (12):
+	//Print All Vowel.
+	static void PrintAllVowelInString(std::string& text);
+	void  PrintAllVowelInString();
+	
 };

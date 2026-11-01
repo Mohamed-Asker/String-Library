@@ -9,9 +9,9 @@ int main()
 	clsString S2("Mohamed Askar 33 From Kafr * &^");
 
 
-	std::cout << S2.CountVowel() << "\n";
-	std::cout << clsString::CountVowel(S1) << "\n";
-	std::cout << S2.CountVowel(S1) << "\n";
+	S2.PrintAllVowelInString() ;
+	clsString::PrintAllVowelInString(S1) ;
+	S2.PrintAllVowelInString(S1);
 	
 	
 
