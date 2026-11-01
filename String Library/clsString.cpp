@@ -111,3 +111,16 @@ char clsString::InvertCharacterCase(int Index)
 	return InvertCharacterCase(_Value[Index]);
 }
 
+//Operation (7):
+//Invert All Letter Case.
+std::string clsString::InvertAllLetterCase(std::string text)
+{
+	for (short i = 0; i < text.length(); i++)
+		text[i] = InvertCharacterCase(text[i]);
+
+	return text;
+}
+std::string clsString::InvertAllLetterCase()
+{
+	return InvertAllLetterCase(_Value);
+}

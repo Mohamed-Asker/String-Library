@@ -50,5 +50,8 @@ public:
 	static char InvertCharacterCase(char Ch);
 	char InvertCharacterCase(int Index);
 	
-
+	//Operation (7):
+	//Invert All Letter Case.
+	static std::string InvertAllLetterCase(std::string text);
+	std::string InvertAllLetterCase();
 };
