@@ -1,7 +1,7 @@
 #include <iostream>
 #include "clsString.h"
 
-
+//Constructors.
 clsString::clsString(std::string value) : _Value(value) {}
 
 //Properties.
@@ -70,4 +70,32 @@ std::string clsString::LowerFirstLetterOfEachWord(std::string text)
 std::string clsString::LowerFirstLetterOfEachWord()
 {
 	return LowerFirstLetterOfEachWord(_Value);
+}
+
+//Operation (4):
+//Upper All Letter of string.
+std::string clsString::UpperAllLetterInString(std::string text)
+{
+	for (short i = 0; i < text.length(); i++)
+		text[i] = std::toupper(text[i]);
+
+	return text;
+}
+std::string clsString::UpperAllLetterInString()
+{
+	return UpperAllLetterInString(_Value);
+}
+
+//Operation (5):
+//Lower All Letter of string.
+std::string clsString::LowerAllLetterInString(std::string text)
+{
+	for (short i = 0; i < text.length(); i++)
+		text[i] = std::tolower(text[i]);
+
+	return text;
+}
+std::string clsString::LowerAllLetterInString()
+{
+	return LowerAllLetterInString(_Value);
 }

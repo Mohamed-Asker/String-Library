@@ -35,4 +35,14 @@ public:
 	static std::string LowerFirstLetterOfEachWord(std::string text);
 	std::string LowerFirstLetterOfEachWord();
 
+	//Operation (4):
+    //Upper All Letter of string.
+	static std::string UpperAllLetterInString(std::string text);
+	std::string UpperAllLetterInString();
+	
+	//Operation (5):
+	//Lower All Letter of string.
+	static std::string LowerAllLetterInString(std::string text);
+	std::string LowerAllLetterInString();
+
 };

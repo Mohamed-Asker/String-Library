@@ -10,9 +10,9 @@ int main()
 	std::string S1 = "Mohamed sAskar sfrom SKart";
 
 
-	std::cout << S2.LowerFirstLetterOfEachWord() << "\n";
-	std::cout << clsString::LowerFirstLetterOfEachWord(S1) << "\n";
-	std::cout << S2.LowerFirstLetterOfEachWord("Jsdf sdf sdf K Wer werkl") << "\n";
+	std::cout << S2.LowerAllLetterInString() << "\n";
+	std::cout << clsString::LowerAllLetterInString(S1) << "\n";
+	std::cout << S2.LowerAllLetterInString("Jsdf sdf sdf K Wer werkl") << "\n";
 
 	system("pause>0");
 	return 0;
