@@ -201,3 +201,19 @@ bool clsString::isVowel(int Index)
 {
 	return isVowelAt(_Value[Index]);
 }
+
+//Operation (11):
+//Count Vowel.
+int clsString::CountVowel(std::string& text)
+{
+	int counter = 0;
+	for (int i = 0; i < text.length() ;i++)
+		if (isVowelAt(text[i]))
+			counter++;
+
+	return counter;
+}
+int clsString::CountVowel()
+{
+	return CountVowel(_Value);
+}

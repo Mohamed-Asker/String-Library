@@ -80,5 +80,9 @@ public:
 	static bool isVowelAt(char Ch);
 	bool isVowel(int Index);
 
+	//Operation (11):
+	//Count Vowel.
+	static int CountVowel(std::string& text);
+	int CountVowel();
 
 };
