@@ -16,7 +16,8 @@ std::string clsString::getValue() const
 
 //Operations.
 
-//Operation (1).
+//Operation (1):
+//Print First Letter of each Word.
 void clsString::PrintFirstLetterOfEachWord(const std::string& text)
 {
 	bool isFirstLetter = true;
@@ -31,4 +32,23 @@ void clsString::PrintFirstLetterOfEachWord(const std::string& text)
 void clsString::PrintFirstLetterOfEachWord()
 {
 	PrintFirstLetterOfEachWord(_Value);
+}
+
+//Operation (2):
+//Print First Letter of each Word.
+std::string clsString::UpperFirstLetterOfEachWord(std::string text)
+{
+	bool isFirstLetter = true;
+	for (short i = 0; i < text.length(); i++)
+	{
+		if ((text[i] != ' ') && isFirstLetter)
+			text[i] = std::toupper(text[i]);
+
+		isFirstLetter = (text[i] == ' ') ? true : false;
+	}
+	return text;
+}
+std::string clsString::UpperFirstLetterOfEachWord()
+{
+	return UpperFirstLetterOfEachWord(_Value);
 }

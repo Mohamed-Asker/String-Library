@@ -6,8 +6,8 @@
 int main()
 {
 	clsString S2;
-	S2.Value = "Mohamed Askar from Kart";
-	std::string S1 = "Mohamed SAskar Sfrom SKart";
+	S2.Value = "mohamed askar from kart";
+	std::string S1 = "mohamed sAskar sfrom sKart";
 
 
 	system("pause>0");

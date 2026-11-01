@@ -20,8 +20,14 @@ public:
 
 	//Operations.
 
-	//Operation (1).
+	//Operation (1):
+	//Print First Letter of each Word.
 	static void PrintFirstLetterOfEachWord(const std::string& text);
 	void PrintFirstLetterOfEachWord();
+
+	//Operation (2):
+	//Print First Letter of each Word.
+	static std::string UpperFirstLetterOfEachWord(std::string text);
+	std::string UpperFirstLetterOfEachWord();
 
 };
