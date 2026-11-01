@@ -232,3 +232,28 @@ void clsString::PrintAllVowelInString()
 {
 	PrintAllVowelInString(_Value);
 }
+
+//Operation (12):
+//Print Each Word In String.
+void clsString::PrintEachWordInString(std::string text)
+{
+	std::size_t pos;
+	std::string word = "";
+	std::string delimiter = " ";
+
+	while ((pos = text.find(delimiter)) != std::string::npos)
+	{
+		word = text.substr(0, pos);
+		if (word != "")
+			std::cout << word << "\n";
+
+		text.erase(0, pos + delimiter.length());
+	}
+
+	if (text != delimiter)
+		std::cout << text << std::endl;
+}
+void clsString::PrintEachWordInString()
+{
+	PrintEachWordInString(_Value);
+}

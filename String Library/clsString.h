@@ -89,5 +89,10 @@ public:
 	//Print All Vowel.
 	static void PrintAllVowelInString(std::string& text);
 	void  PrintAllVowelInString();
+
+	//Operation (12):
+    //Print Each Word In String.
+	static void PrintEachWordInString(std::string text);
+	void PrintEachWordInString();
 	
 };
