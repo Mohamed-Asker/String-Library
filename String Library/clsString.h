@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 
 
 class clsString
@@ -13,15 +14,14 @@ public:
 	clsString(std::string value);
 
 	//Properties.
-	void setValue(std::string value)
-	{
-		_Value = value;
-	}
-	std::string Value()const
-	{
-		return _Value;
-	}
-	__declspec(property(get = Value, put = setValue)) std::string Value;
+	void setValue(std::string value);
+	std::string getValue() const;
+	__declspec(property(get = getValue, put = setValue)) std::string Value;
 
+	//Operations.
+
+	//Operation (1).
+	static void PrintFirstLetterOfEachWord(const std::string& text);
+	void PrintFirstLetterOfEachWord();
 
 };
