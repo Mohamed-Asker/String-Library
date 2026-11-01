@@ -26,8 +26,13 @@ public:
 	void PrintFirstLetterOfEachWord();
 
 	//Operation (2):
-	//Print First Letter of each Word.
+	//Upper First Letter of each Word.
 	static std::string UpperFirstLetterOfEachWord(std::string text);
 	std::string UpperFirstLetterOfEachWord();
+
+	//Operation (3):
+	//Lower First Letter of each Word.
+	static std::string LowerFirstLetterOfEachWord(std::string text);
+	std::string LowerFirstLetterOfEachWord();
 
 };
