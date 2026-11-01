@@ -10,11 +10,9 @@ int main()
 	S2.Value = "Mohamed Askar 33 From Kafr * &^";
 
 
-	std::cout << S2.CountLetterInString(clsString::CaptialLetters) << "\n";
-	std::cout << clsString::CountLetterInString(S1, clsString::SmallLetters) << "\n";
-	std::cout << S2.CountLetterInString(clsString::DigitLetters) << "\n";
-	std::cout << clsString::CountLetterInString(S1, clsString::PunchLetters) << "\n";
-	std::cout << S2.CountLetterInString(clsString::Spaces) << "\n";
+	std::cout << S2.CountSpecificCharacter('m') << "\n";
+	std::cout << clsString::CountSpecificCharacter(S1, 'a') << "\n";
+	
 
 
 	system("pause>0");

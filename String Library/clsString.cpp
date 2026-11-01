@@ -165,3 +165,28 @@ short clsString::CountLetterInString(enWhatToCount WhatToCount)
 {
 	return CountLetterInString(_Value, WhatToCount);
 }
+
+//Operation (9):
+//Count Specific Character.
+short clsString::CountSpecificCharacter(std::string& text, char Ch, bool MatchCase)
+{
+	short counter = 0;
+	for (short i = 0; i < text.length(); i++)
+	{
+		if (MatchCase)
+		{
+			if (text[i] == Ch)
+				counter++;
+		}
+		else
+		{
+			if (std::tolower(text[i]) == std::tolower(Ch))
+				counter++;
+		}
+	}
+	return counter++;
+}
+short clsString::CountSpecificCharacter(char Ch, bool MatchCase)
+{
+	return CountSpecificCharacter(_Value, Ch, MatchCase);
+}

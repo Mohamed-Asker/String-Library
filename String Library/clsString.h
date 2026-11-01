@@ -70,4 +70,10 @@ public:
 	static short CountLetterInString(std::string text, enWhatToCount WhatToCount = enWhatToCount::AllLetters);
 	short CountLetterInString(enWhatToCount WhatToCount = enWhatToCount::AllLetters);
 
+	//Operation (9):
+	//Count Specific Character.
+	static short CountSpecificCharacter(std::string& text, char Ch, bool MatchCase = true);
+	short CountSpecificCharacter(char Ch, bool MatchCase = true);
+
+
 };
