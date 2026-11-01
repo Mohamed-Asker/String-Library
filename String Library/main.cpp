@@ -10,9 +10,8 @@ int main()
 	std::string S1 = "Mohamed sAskar sfrom SKart";
 
 
-	std::cout << S2.LowerAllLetterInString() << "\n";
-	std::cout << clsString::LowerAllLetterInString(S1) << "\n";
-	std::cout << S2.LowerAllLetterInString("Jsdf sdf sdf K Wer werkl") << "\n";
+	std::cout << S2.InvertCharacterCase(8) << "\n";
+	std::cout << clsString::InvertCharacterCase('q') << "\n";
 
 	system("pause>0");
 	return 0;

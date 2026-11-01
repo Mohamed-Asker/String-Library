@@ -99,3 +99,15 @@ std::string clsString::LowerAllLetterInString()
 {
 	return LowerAllLetterInString(_Value);
 }
+
+//Operation (6):
+//Invert Character Case.
+char clsString::InvertCharacterCase(char Ch)
+{
+	return (std::isupper(Ch)) ? std::tolower(Ch) : std::toupper(Ch);
+}
+char clsString::InvertCharacterCase(int Index)
+{
+	return InvertCharacterCase(_Value[Index]);
+}
+

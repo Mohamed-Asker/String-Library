@@ -45,4 +45,10 @@ public:
 	static std::string LowerAllLetterInString(std::string text);
 	std::string LowerAllLetterInString();
 
+	//Operation (6):
+	//Invert Character Case.
+	static char InvertCharacterCase(char Ch);
+	char InvertCharacterCase(int Index);
+	
+
 };
