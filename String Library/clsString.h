@@ -9,6 +9,16 @@ private:
 	std::string _Value;
 
 public:
+    enum enWhatToCount
+	{
+		AllLetters = 1, 
+		CaptialLetters = 2, 
+		SmallLetters = 3,
+		DigitLetters = 4, 
+		PunchLetters = 5,
+		Spaces = 6,
+	};
+
 	//Constructors.
 	clsString() {};
 	clsString(std::string value);
@@ -54,4 +64,10 @@ public:
 	//Invert All Letter Case.
 	static std::string InvertAllLetterCase(std::string text);
 	std::string InvertAllLetterCase();
+
+	//Operation (8):
+	//Count Letter In String.
+	static short CountLetterInString(std::string text, enWhatToCount WhatToCount = enWhatToCount::AllLetters);
+	short CountLetterInString(enWhatToCount WhatToCount = enWhatToCount::AllLetters);
+
 };

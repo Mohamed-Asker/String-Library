@@ -124,3 +124,44 @@ std::string clsString::InvertAllLetterCase()
 {
 	return InvertAllLetterCase(_Value);
 }
+
+//Operation (8):
+//Count Letter In String.
+short clsString::CountLetterInString(std::string text, enWhatToCount WhatToCount)
+{
+	if (WhatToCount == enWhatToCount::AllLetters)
+		return text.length();
+
+	short counter = 0; 
+	for (short i = 0; i < text.length(); i++)
+	{
+		switch (WhatToCount)
+		{
+		case enWhatToCount::CaptialLetters:
+			if (std::isupper(text[i]))
+				counter++;
+			break;
+		case enWhatToCount::SmallLetters:
+			if (std::islower(text[i]))
+				counter++;
+			break;
+		case enWhatToCount::DigitLetters:
+			if (std::isdigit(text[i]))
+				counter++;
+			break;
+		case enWhatToCount::PunchLetters:
+			if (std::ispunct(text[i]))
+				counter++;
+			break;
+		case enWhatToCount::Spaces:
+			if (std::isspace(text[i]))
+				counter++;
+			break;
+		}
+	}
+	return counter;
+}
+short clsString::CountLetterInString(enWhatToCount WhatToCount)
+{
+	return CountLetterInString(_Value, WhatToCount);
+}
