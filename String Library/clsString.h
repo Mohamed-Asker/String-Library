@@ -124,5 +124,9 @@ public:
 	static std::string ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord);
 	void ReplaceWordInString(const std::string& OldWord, const std::string& NewWord);
 
+	//Operation (18):
+	//Replace Word In String (Custom).
+	static std::string ReplaceWordInStringCustom(std::string text, const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
+	void ReplaceWordInStringCustom(const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
 	
 };

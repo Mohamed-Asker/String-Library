@@ -16,10 +16,11 @@ int main()
 
 
 
-	S2.ReplaceWordInString("From", "Froomm");
+	S2.ReplaceWordInStringCustom("From", "Froomm");
+	S2.ReplaceWordInStringCustom("askar", "Asskarrerww",false);
 	std::cout << S2.Value << "\n";
 
-	std::cout << clsString::ReplaceWordInString(S1, "Askar", "Askkkar") << "\n";
+	
 		
 	system("pause>0");
 	return 0;

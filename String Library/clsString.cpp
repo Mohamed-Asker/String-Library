@@ -406,3 +406,27 @@ void clsString::ReplaceWordInString(const std::string& OldWord, const std::strin
 	Value = ReplaceWordInString(_Value, OldWord, NewWord);
 }
 
+//Operation (19):
+//Replace Word In String (Custom).
+std::string clsString::ReplaceWordInStringCustom(std::string text, const std::string& OldWord, const std::string& NewWord, bool MatchCase)
+{
+	std::vector <std::string> vTokens = split(text, " ");
+	for (std::string& token : vTokens)
+	{
+		if (MatchCase)
+		{
+			if (token == OldWord)
+				token = NewWord;
+		}
+		else
+		{
+			if (LowerAllLetterInString(token) == LowerAllLetterInString(OldWord))
+				token = NewWord;
+		}
+	}
+	return JoinString(vTokens, " ");
+}
+void  clsString::ReplaceWordInStringCustom(const std::string& OldWord, const std::string& NewWord, bool MatchCase)
+{
+	Value = ReplaceWordInStringCustom(Value, OldWord, NewWord, MatchCase);
+}
