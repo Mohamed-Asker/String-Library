@@ -66,12 +66,12 @@ public:
 
 	//Operation (8):
 	//Count Letter In String.
-	static short CountLetterInString(std::string text, enWhatToCount WhatToCount = enWhatToCount::AllLetters);
+	static short CountLetterInString(const std::string& text, enWhatToCount WhatToCount = enWhatToCount::AllLetters);
 	short CountLetterInString(enWhatToCount WhatToCount = enWhatToCount::AllLetters);
 
 	//Operation (9):
 	//Count Specific Character.
-	static short CountSpecificCharacter(std::string& text, char Ch, bool MatchCase = true);
+	static short CountSpecificCharacter(const std::string& text, char Ch, bool MatchCase = true);
 	short CountSpecificCharacter(char Ch, bool MatchCase = true);
 
 	//Operation (10):
@@ -81,57 +81,61 @@ public:
 
 	//Operation (11):
 	//Count Vowel.
-	static int CountVowel(std::string& text);
+	static int CountVowel(const std::string& text);
 	int CountVowel();
 
 	//Operation (12):
 	//Print All Vowel.
-	static void PrintAllVowelInString(std::string& text);
+	static void PrintAllVowelInString(const std::string& text);
 	void  PrintAllVowelInString();
 
-	//Operation (12):
+	//Operation (13):
     //Print Each Word In String.
 	static void PrintEachWordInString(std::string text);
 	void PrintEachWordInString();
 
-	//Operation (13):
+	//Operation (14):
 	//Count Each Word In String.
 	static int CountEachWordInString(std::string text);
 	int CountEachWordInString();
 
-	//Operation (14):
+	//Operation (15):
 	//Split String.
 	static std::vector <std::string> split(std::string text, const std::string& delimiter);
 	std::vector <std::string> split(const std::string& delimiter);
 
-	//Operation (15):
+	//Operation (16):
 	//Trim.
 	static std::string Trim(std::string text);
 	void Trim();
 
-	//Operation (16):
+	//Operation (17):
 	//Join String.
 	static std::string JoinString(std::vector <std::string>& vTokens, const std::string& delimiter);
 	static std::string JoinString(std::string arrTokens[], const int& arrLength, const std::string& delimiter);
 	
-	//Operation (17):
+	//Operation (18):
 	//Revarse Words In String.
 	static std::string ReverseWordsInString(std::string& text, const std::string& delimiter);
 	void ReverseWordsInString(const std::string& delimiter);
 
-	//Operation (18):
+	//Operation (19):
 	//Replace Word In String.
 	static std::string ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord);
 	void ReplaceWordInString(const std::string& OldWord, const std::string& NewWord);
 
-	//Operation (19):
+	//Operation (20):
 	//Replace Word In String (Custom).
 	static std::string ReplaceWordInStringCustom(std::string text, const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
 	void ReplaceWordInStringCustom(const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
 
-	//Operation (20):
+	//Operation (21):
 	//Remove Punctions.
 	static std::string RemovePunctions(std::string text);
 	void RemovePunctions();
-	
+
+	//Operation (22):
+	//Length.
+	static int Length(const std::string& text);
+	int Length();
 };
