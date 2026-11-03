@@ -8,9 +8,9 @@ int main()
 	std::string S1 = "Mohamed Askar From - @";
 	clsString S2("Mohamed Askar 33 From Kafr * &^");
 
-	//S2.PrintEachWordInString();
-	clsString::PrintEachWordInString(S1);
-	S2.PrintEachWordInString(S1);
+	std::cout << S2.CountEachWordInString() << "\n";
+	std::cout << clsString::CountEachWordInString(S1) << "\n";
+	std::cout << S2.CountEachWordInString("sdfj ernm sdf ,s  ,df") << "\n";
 	
 	
 

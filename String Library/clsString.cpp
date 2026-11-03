@@ -257,3 +257,31 @@ void clsString::PrintEachWordInString()
 {
 	PrintEachWordInString(_Value);
 }
+
+//Operation (13):
+//Count Each Word In String.
+int clsString::CountEachWordInString(std::string text)
+{
+	std::string word = "";
+	std::string delimiter = " ";
+	std::size_t pos;
+	int counter = 0;
+
+	while ((pos = text.find(delimiter)) != std::string::npos)
+	{
+		word = text.substr(0, pos);
+		if (word != "")
+			counter++;
+
+		text.erase(0, pos + delimiter.length());
+	}
+
+	if (text != delimiter)
+		counter++;
+
+	return counter;
+}
+int clsString::CountEachWordInString()
+{
+	return CountEachWordInString(_Value);
+}

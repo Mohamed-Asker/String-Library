@@ -94,5 +94,11 @@ public:
     //Print Each Word In String.
 	static void PrintEachWordInString(std::string text);
 	void PrintEachWordInString();
+
+	//Operation (13):
+	//Count Each Word In String.
+	static int CountEachWordInString(std::string text);
+	int CountEachWordInString();
+
 	
 };
