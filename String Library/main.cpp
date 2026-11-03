@@ -5,15 +5,13 @@
 
 int main()
 {
-	std::string S1 = "Mohamed Askar From ";
-	clsString S2("Mohamed Askar 33 From Kafr");
+	std::string S1 = "  Mohamed Askar From  ";
+	clsString S2("  Mohamed Askar 33 From Kafr  ");
 	std::vector <std::string> vTokens;
 
-	std::cout << S2.CountEachWordInString();
-	std::cout << "\n--------------------\n";
-	std::cout << S2.CountEachWordInString("sdfkjs;df sdfjk sdfk;j sdf;jj ");
-	std::cout << "\n--------------------\n";
-	std::cout <<  clsString::CountEachWordInString(S1);
+	std::cout << "|" << clsString::Trim(S1) << "|\n";
+	std::cout << "|" << S2.Trim() << "|\n";
+	std::cout << "|" << S2.Trim("  fdfs sdfsf dfgdfg  ") << "|\n";
 
 		
 	system("pause>0");

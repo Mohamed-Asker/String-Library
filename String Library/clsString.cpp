@@ -315,3 +315,38 @@ std::vector <std::string> clsString::split(const std::string& delimiter)
 {
 	return split(_Value, delimiter);
 }
+
+//Operation (15):
+//Trim.
+void TrimLeft(std::string& text)
+{
+	for (int i = 0; i < text.length(); i++)
+	{
+		if (text[i] != ' ')
+		{
+			text = text.substr(i, text.length() - i);
+			break;
+		}
+	}
+}
+void TrimRight(std::string& text)
+{
+	for (int i = text.length() - 1; i >= 0; i--)
+	{
+		if (text[i] != ' ')
+		{
+			text = text.substr(0, i + 1);
+			break;
+		}
+	}
+}
+std::string clsString::Trim(std::string text)
+{
+	TrimLeft(text);
+	TrimRight(text);
+	return text;
+}
+std::string clsString::Trim()
+{
+	return Trim(_Value);
+}

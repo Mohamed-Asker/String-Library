@@ -104,6 +104,9 @@ public:
 	static std::vector <std::string> split(std::string text, const std::string& delimiter);
 	std::vector <std::string> split(const std::string& delimiter);
 
-
+	//Operation (15):
+	//Trim.
+	static std::string Trim(std::string text);
+	std::string Trim();
 	
 };
