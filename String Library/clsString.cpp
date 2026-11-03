@@ -350,3 +350,23 @@ std::string clsString::Trim()
 {
 	return Trim(_Value);
 }
+
+//Operation (16):
+//Join String.
+std::string clsString::JoinString(std::vector <std::string>& vTokens, const std::string& delimiter)
+{
+	std::string text = "";
+	for (std::string& token : vTokens)
+		text += (token + delimiter);
+
+	return text.substr(0, text.length() - delimiter.length());
+}
+std::string clsString::JoinString(std::string arrTokens[], const int& arrLength, const std::string& delimiter)
+{
+	std::string text = "";
+	for (int i = 0 ; i < arrLength;i++)
+	{
+		text += (arrTokens[i] + delimiter);
+	}
+	return text.substr(0, text.length() - delimiter.length());
+}

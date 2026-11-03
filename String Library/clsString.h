@@ -108,5 +108,11 @@ public:
 	//Trim.
 	static std::string Trim(std::string text);
 	std::string Trim();
+
+	//Operation (16):
+	//Join String.
+	static std::string JoinString(std::vector <std::string>& vTokens, const std::string& delimiter);
+	static std::string JoinString(std::string arrTokens[], const int& arrLength, const std::string& delimiter);
+	
 	
 };
