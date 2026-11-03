@@ -1,47 +1,38 @@
-<<<<<<< HEAD
-<h1 align="center">🔤 clsString Library</h1>
+ <h1 align="center">🔤 clsString Library</h1>
 
 <p align="center">
-  🚀 A robust, lightweight, and versatile C++ string manipulation utility class.
+  🚀 A lightweight and versatile C++ library for string manipulation.
 </p>
 
-## 🏅 Technologies & Tools
-
 <p align="center">
-=======
-# 🔤 clsString Library
-
-> 🚀 A robust, lightweight, and versatile C++ string manipulation utility class.
-
-## 🏅 Technologies & Tools
-
-<p align="left">
->>>>>>> 2cda67bb98807145e1703143111c63bc8b023a03
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/MIT%20License-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="MIT License" />
 </p>
-<<<<<<< HEAD
-=======
+
 ---
->>>>>>> 2cda67bb98807145e1703143111c63bc8b023a03
 
 ## 📌 About The Project
 
-`clsString` is a C++ utility class designed to simplify string manipulation by providing a collection of useful operations for handling and processing strings.
+`clsString` is a C++ utility library designed to simplify string manipulation by providing a collection of useful operations for handling and processing strings.
 
 ## ✨ Features
 
-- 🔠 Change letter case (Uppercase / Lowercase).
+- 🔠 Change the first letter of each word to uppercase or lowercase.
+- 🔡 Convert all string letters to uppercase or lowercase.
 - 🔄 Invert character case.
-- 🔢 Count letters, digits, spaces, and vowels.
-- 📝 Print and count words.
-- ✂️ Split and join strings.
+- 🔢 Count uppercase letters, lowercase letters, digits, punctuation, and spaces.
+- 🔍 Count specific characters with case-sensitive or case-insensitive options.
+- 🔤 Check and count vowels.
+- 📝 Print the first letter of each word.
+- 📃 Print and count words in a string.
+- ✂️ Split strings into tokens.
+- 🔗 Join strings using a custom delimiter.
 - 🧹 Trim leading and trailing spaces.
 - 🔃 Reverse words in a string.
-- 🔍 Replace words with custom options.
+- 🔁 Replace words with case-sensitive or custom matching options.
 - ❌ Remove punctuation.
 - 📏 Get string length.
 
@@ -49,7 +40,8 @@
 
 - 💻 C++
 - 📚 Standard Template Library (STL)
-- 🖥️ Visual Studio / MSVC
+- 🖥️ Visual Studio
+- 🌿 Git & GitHub
 
 ## 📂 Project Structure
 
@@ -80,7 +72,7 @@ int main()
 }
 ```
 
-### 📤 Output
+## 📤 Output
 
 ```text
 Hello World
@@ -88,8 +80,16 @@ Hello World
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the MIT License.
 
 ---
 
-### ❤️ Made with C++ and passion for programming!
+## 👨‍💻 Author
+
+**Mohamed Askar**
+
+💻 C++ Developer | Programming Enthusiast
+
+<p align="center">
+  ❤️ Made with C++ and passion for programming.
+</p>
