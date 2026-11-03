@@ -124,9 +124,14 @@ public:
 	static std::string ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord);
 	void ReplaceWordInString(const std::string& OldWord, const std::string& NewWord);
 
-	//Operation (18):
+	//Operation (19):
 	//Replace Word In String (Custom).
 	static std::string ReplaceWordInStringCustom(std::string text, const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
 	void ReplaceWordInStringCustom(const std::string& OldWord, const std::string& NewWord, bool MatchCase = true);
+
+	//Operation (20):
+	//Remove Punctions.
+	static std::string RemovePunctions(std::string text);
+	void RemovePunctions();
 	
 };

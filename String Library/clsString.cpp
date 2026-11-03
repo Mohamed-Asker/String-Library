@@ -430,3 +430,20 @@ void  clsString::ReplaceWordInStringCustom(const std::string& OldWord, const std
 {
 	Value = ReplaceWordInStringCustom(Value, OldWord, NewWord, MatchCase);
 }
+
+//Operation (20):
+//Remove Punctions.
+std::string clsString::RemovePunctions(std::string text)
+{
+	std::string NewText = "";
+	for (char& Ch : text)
+	{
+		if (!ispunct(Ch))
+			NewText += Ch;
+	}
+	return NewText;
+}
+void clsString::RemovePunctions()
+{
+	Value = RemovePunctions(Value);
+}
