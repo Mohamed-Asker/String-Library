@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">🔤 clsString Library</h1>
 
 <p align="center">
@@ -7,12 +8,25 @@
 ## 🏅 Technologies & Tools
 
 <p align="center">
+=======
+# 🔤 clsString Library
+
+> 🚀 A robust, lightweight, and versatile C++ string manipulation utility class.
+
+## 🏅 Technologies & Tools
+
+<p align="left">
+>>>>>>> 2cda67bb98807145e1703143111c63bc8b023a03
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
   <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/MIT%20License-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="MIT License" />
 </p>
+<<<<<<< HEAD
+=======
+---
+>>>>>>> 2cda67bb98807145e1703143111c63bc8b023a03
 
 ## 📌 About The Project
 
