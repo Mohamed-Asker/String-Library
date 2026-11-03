@@ -87,8 +87,8 @@ This project is licensed under the MIT License.
 ## 👨‍💻 Author
 
 **Mohamed Askar**
-
 💻 C++ Developer | Programming Enthusiast
+
 
 <p align="center">
   ❤️ Made with C++ and passion for programming.
