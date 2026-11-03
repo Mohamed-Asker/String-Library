@@ -86,7 +86,7 @@ std::string clsString::UpperAllLetterInString(std::string text)
 }
 void clsString::UpperAllLetterInString()
 {
-	Value = UpperAllLetterInString(_Value);
+	Value = UpperAllLetterInString(Value);
 }
 
 //Operation (5):
@@ -100,7 +100,7 @@ std::string clsString::LowerAllLetterInString(std::string text)
 }
 void clsString::LowerAllLetterInString()
 {
-	Value = LowerAllLetterInString(_Value);
+	Value = LowerAllLetterInString(Value);
 }
 
 //Operation (6):
@@ -130,7 +130,7 @@ void clsString::InvertAllLetterCase()
 
 //Operation (8):
 //Count Letter In String.
-short clsString::CountLetterInString(std::string text, enWhatToCount WhatToCount)
+short clsString::CountLetterInString(const std::string& text, enWhatToCount WhatToCount)
 {
 	if (WhatToCount == enWhatToCount::AllLetters)
 		return text.length();
@@ -166,12 +166,12 @@ short clsString::CountLetterInString(std::string text, enWhatToCount WhatToCount
 }
 short clsString::CountLetterInString(enWhatToCount WhatToCount)
 {
-	return CountLetterInString(_Value, WhatToCount);
+	return CountLetterInString(Value, WhatToCount);
 }
 
 //Operation (9):
 //Count Specific Character.
-short clsString::CountSpecificCharacter(std::string& text, char Ch, bool MatchCase)
+short clsString::CountSpecificCharacter(const std::string& text, char Ch, bool MatchCase)
 {
 	short counter = 0;
 	for (short i = 0; i < text.length(); i++)
@@ -191,7 +191,7 @@ short clsString::CountSpecificCharacter(std::string& text, char Ch, bool MatchCa
 }
 short clsString::CountSpecificCharacter(char Ch, bool MatchCase)
 {
-	return CountSpecificCharacter(_Value, Ch, MatchCase);
+	return CountSpecificCharacter(Value, Ch, MatchCase);
 }
 
 //Operation (10):
@@ -207,7 +207,7 @@ bool clsString::isVowel(int Index)
 
 //Operation (11):
 //Count Vowel.
-int clsString::CountVowel(std::string& text)
+int clsString::CountVowel(const std::string& text)
 {
 	int counter = 0;
 	for (int i = 0; i < text.length() ;i++)
@@ -218,12 +218,12 @@ int clsString::CountVowel(std::string& text)
 }
 int clsString::CountVowel()
 {
-	return CountVowel(_Value);
+	return CountVowel(Value);
 }
 
 //Operation (12):
 //Print All Vowel.
-void clsString::PrintAllVowelInString(std::string& text)
+void clsString::PrintAllVowelInString(const std::string& text)
 {
 	for (int i = 0; i < text.length(); i++)
 		if (isVowelAt(text[i]))
@@ -233,10 +233,10 @@ void clsString::PrintAllVowelInString(std::string& text)
 }
 void clsString::PrintAllVowelInString()
 {
-	PrintAllVowelInString(_Value);
+	PrintAllVowelInString(Value);
 }
 
-//Operation (12):
+//Operation (13):
 //Print Each Word In String.
 void clsString::PrintEachWordInString(std::string text)
 {
@@ -261,7 +261,7 @@ void clsString::PrintEachWordInString()
 	PrintEachWordInString(_Value);
 }
 
-//Operation (13):
+//Operation (14):
 //Count Each Word In String.
 int clsString::CountEachWordInString(std::string text)
 {
@@ -289,7 +289,7 @@ int clsString::CountEachWordInString()
 	return CountEachWordInString(_Value);
 }
 
-//Operation (14):
+//Operation (15):
 //Split String.
 std::vector <std::string> clsString::split(std::string text, const std::string& delimiter)
 {
@@ -316,7 +316,7 @@ std::vector <std::string> clsString::split(const std::string& delimiter)
 	return split(_Value, delimiter);
 }
 
-//Operation (15):
+//Operation (16):
 //Trim.
 void TrimLeft(std::string& text)
 {
@@ -348,10 +348,10 @@ std::string clsString::Trim(std::string text)
 }
 void clsString::Trim()
 {
-	Value = Trim(_Value);
+	Value = Trim(Value);
 }
 
-//Operation (16):
+//Operation (17):
 //Join String.
 std::string clsString::JoinString(std::vector <std::string>& vTokens, const std::string& delimiter)
 {
@@ -371,7 +371,7 @@ std::string clsString::JoinString(std::string arrTokens[], const int& arrLength,
 	return text.substr(0, text.length() - delimiter.length());
 }
 
-//Operation (17):
+//Operation (18):
 //Revarse Words In String.
 std::string clsString::ReverseWordsInString(std::string& text, const std::string& delimiter)
 {
@@ -391,7 +391,7 @@ void clsString::ReverseWordsInString(const std::string& delimiter)
 	Value =  ReverseWordsInString(_Value, delimiter);
 }
 
-//Operation (18):
+//Operation (19):
 //Replace Word In String.
 std::string clsString::ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord)
 {
@@ -406,7 +406,7 @@ void clsString::ReplaceWordInString(const std::string& OldWord, const std::strin
 	Value = ReplaceWordInString(_Value, OldWord, NewWord);
 }
 
-//Operation (19):
+//Operation (20):
 //Replace Word In String (Custom).
 std::string clsString::ReplaceWordInStringCustom(std::string text, const std::string& OldWord, const std::string& NewWord, bool MatchCase)
 {
@@ -431,7 +431,7 @@ void  clsString::ReplaceWordInStringCustom(const std::string& OldWord, const std
 	Value = ReplaceWordInStringCustom(Value, OldWord, NewWord, MatchCase);
 }
 
-//Operation (20):
+//Operation (21):
 //Remove Punctions.
 std::string clsString::RemovePunctions(std::string text)
 {
@@ -446,4 +446,15 @@ std::string clsString::RemovePunctions(std::string text)
 void clsString::RemovePunctions()
 {
 	Value = RemovePunctions(Value);
+};
+
+//Operation (22):
+//Length.
+int clsString::Length(const std::string& text)
+{
+	return text.length();
+}
+int clsString::Length()
+{
+	return Length(Value);
 }
