@@ -51,9 +51,9 @@ std::string clsString::UpperFirstLetterOfEachWord(std::string text)
 	}
 	return text;
 }
-std::string clsString::UpperFirstLetterOfEachWord()
+void clsString::UpperFirstLetterOfEachWord()
 {
-	return UpperFirstLetterOfEachWord(_Value);
+	Value = UpperFirstLetterOfEachWord(_Value);
 }
 
 //Operation (3):
@@ -70,9 +70,9 @@ std::string clsString::LowerFirstLetterOfEachWord(std::string text)
 	}
 	return text;
 }
-std::string clsString::LowerFirstLetterOfEachWord()
+void clsString::LowerFirstLetterOfEachWord()
 {
-	return LowerFirstLetterOfEachWord(_Value);
+	Value = LowerFirstLetterOfEachWord(_Value);
 }
 
 //Operation (4):
@@ -84,9 +84,9 @@ std::string clsString::UpperAllLetterInString(std::string text)
 
 	return text;
 }
-std::string clsString::UpperAllLetterInString()
+void clsString::UpperAllLetterInString()
 {
-	return UpperAllLetterInString(_Value);
+	Value = UpperAllLetterInString(_Value);
 }
 
 //Operation (5):
@@ -98,9 +98,9 @@ std::string clsString::LowerAllLetterInString(std::string text)
 
 	return text;
 }
-std::string clsString::LowerAllLetterInString()
+void clsString::LowerAllLetterInString()
 {
-	return LowerAllLetterInString(_Value);
+	Value = LowerAllLetterInString(_Value);
 }
 
 //Operation (6):
@@ -109,9 +109,9 @@ char clsString::InvertCharacterCase(char Ch)
 {
 	return (std::isupper(Ch)) ? std::tolower(Ch) : std::toupper(Ch);
 }
-char clsString::InvertCharacterCase(int Index)
+void clsString::InvertCharacterCase(int Index)
 {
-	return InvertCharacterCase(_Value[Index]);
+	_Value[Index] = InvertCharacterCase(_Value[Index]);
 }
 
 //Operation (7):
@@ -123,9 +123,9 @@ std::string clsString::InvertAllLetterCase(std::string text)
 
 	return text;
 }
-std::string clsString::InvertAllLetterCase()
+void clsString::InvertAllLetterCase()
 {
-	return InvertAllLetterCase(_Value);
+	Value = InvertAllLetterCase(Value);
 }
 
 //Operation (8):
@@ -346,9 +346,9 @@ std::string clsString::Trim(std::string text)
 	TrimRight(text);
 	return text;
 }
-std::string clsString::Trim()
+void clsString::Trim()
 {
-	return Trim(_Value);
+	Value = Trim(_Value);
 }
 
 //Operation (16):
@@ -386,7 +386,23 @@ std::string clsString::ReverseWordsInString(std::string& text, const std::string
 	}
 	return NewText.substr(0, NewText.length() - delimiter.length());
 }
-std::string clsString::ReverseWordsInString(const std::string& delimiter)
+void clsString::ReverseWordsInString(const std::string& delimiter)
 {
-	return ReverseWordsInString(_Value, delimiter);
+	Value =  ReverseWordsInString(_Value, delimiter);
 }
+
+//Operation (18):
+//Replace Word In String.
+std::string clsString::ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord)
+{
+	std::size_t pos;
+	while ((pos = text.find(OldWord)) != std::string::npos)
+		text.replace(pos, OldWord.length(), NewWord);
+
+	return text;
+}
+void clsString::ReplaceWordInString(const std::string& OldWord, const std::string& NewWord)
+{
+	Value = ReplaceWordInString(_Value, OldWord, NewWord);
+}
+

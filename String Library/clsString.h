@@ -37,32 +37,32 @@ public:
 	//Operation (2):
 	//Upper First Letter of each Word.
 	static std::string UpperFirstLetterOfEachWord(std::string text);
-	std::string UpperFirstLetterOfEachWord();
+	void UpperFirstLetterOfEachWord();
 
 	//Operation (3):
 	//Lower First Letter of each Word.
 	static std::string LowerFirstLetterOfEachWord(std::string text);
-	std::string LowerFirstLetterOfEachWord();
+	void LowerFirstLetterOfEachWord();
 
 	//Operation (4):
     //Upper All Letter of string.
 	static std::string UpperAllLetterInString(std::string text);
-	std::string UpperAllLetterInString();
+	void UpperAllLetterInString();
 	
 	//Operation (5):
 	//Lower All Letter of string.
 	static std::string LowerAllLetterInString(std::string text);
-	std::string LowerAllLetterInString();
+	void LowerAllLetterInString();
 
 	//Operation (6):
 	//Invert Character Case.
 	static char InvertCharacterCase(char Ch);
-	char InvertCharacterCase(int Index);
+	void InvertCharacterCase(int Index);
 	
 	//Operation (7):
 	//Invert All Letter Case.
 	static std::string InvertAllLetterCase(std::string text);
-	std::string InvertAllLetterCase();
+	void InvertAllLetterCase();
 
 	//Operation (8):
 	//Count Letter In String.
@@ -107,7 +107,7 @@ public:
 	//Operation (15):
 	//Trim.
 	static std::string Trim(std::string text);
-	std::string Trim();
+	void Trim();
 
 	//Operation (16):
 	//Join String.
@@ -117,6 +117,12 @@ public:
 	//Operation (17):
 	//Revarse Words In String.
 	static std::string ReverseWordsInString(std::string& text, const std::string& delimiter);
-	std::string ReverseWordsInString(const std::string& delimiter);
+	void ReverseWordsInString(const std::string& delimiter);
+
+	//Operation (18):
+	//Replace Word In String.
+	static std::string ReplaceWordInString(std::string text, const std::string& OldWord, const std::string& NewWord);
+	void ReplaceWordInString(const std::string& OldWord, const std::string& NewWord);
+
 	
 };
