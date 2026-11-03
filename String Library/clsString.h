@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
-#include <iomanip>
-
+#include <vector>
 
 class clsString
 {
@@ -99,6 +98,12 @@ public:
 	//Count Each Word In String.
 	static int CountEachWordInString(std::string text);
 	int CountEachWordInString();
+
+	//Operation (14):
+	//Split String.
+	static std::vector <std::string> split(std::string text, const std::string& delimiter);
+	std::vector <std::string> split(const std::string& delimiter);
+
 
 	
 };

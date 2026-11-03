@@ -1,4 +1,7 @@
 #include <iostream>
+#include <iomanip>
+#include <vector>
+#include <string>
 #include "clsString.h"
 
 //Constructors.
@@ -250,7 +253,7 @@ void clsString::PrintEachWordInString(std::string text)
 		text.erase(0, pos + delimiter.length());
 	}
 
-	if (text != delimiter)
+	if (!(text == delimiter || text == "" || text == " "))
 		std::cout << text << std::endl;
 }
 void clsString::PrintEachWordInString()
@@ -276,7 +279,7 @@ int clsString::CountEachWordInString(std::string text)
 		text.erase(0, pos + delimiter.length());
 	}
 
-	if (text != delimiter)
+	if (!(text == delimiter || text == "" || text == " "))
 		counter++;
 
 	return counter;
@@ -284,4 +287,31 @@ int clsString::CountEachWordInString(std::string text)
 int clsString::CountEachWordInString()
 {
 	return CountEachWordInString(_Value);
+}
+
+//Operation (14):
+//Split String.
+std::vector <std::string> clsString::split(std::string text, const std::string& delimiter)
+{
+	std::size_t pos;
+	std::string word = "";
+	std::vector <std::string> vTokens;
+
+	while ((pos = text.find(delimiter)) != std::string::npos)
+	{
+		word = text.substr(0, pos);
+		if (word != "")
+			vTokens.push_back(word);
+
+		text.erase(0, pos + delimiter.length());
+	}
+
+	if (!((text == delimiter) || (text == " ") || (text == "")))
+		vTokens.push_back(text);
+
+	return vTokens;
+}
+std::vector <std::string> clsString::split(const std::string& delimiter)
+{
+	return split(_Value, delimiter);
 }
