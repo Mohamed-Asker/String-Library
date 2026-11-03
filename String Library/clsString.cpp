@@ -370,3 +370,23 @@ std::string clsString::JoinString(std::string arrTokens[], const int& arrLength,
 	}
 	return text.substr(0, text.length() - delimiter.length());
 }
+
+//Operation (17):
+//Revarse Words In String.
+std::string clsString::ReverseWordsInString(std::string& text, const std::string& delimiter)
+{
+	std::vector <std::string> vTokens = split(text, delimiter);
+	std::vector <std::string>::iterator iter = vTokens.end();
+	std::string NewText = "";
+
+	while (iter != vTokens.begin())
+	{
+		iter--;
+		NewText += (*iter + delimiter);
+	}
+	return NewText.substr(0, NewText.length() - delimiter.length());
+}
+std::string clsString::ReverseWordsInString(const std::string& delimiter)
+{
+	return ReverseWordsInString(_Value, delimiter);
+}

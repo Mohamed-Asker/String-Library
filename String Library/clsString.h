@@ -114,5 +114,9 @@ public:
 	static std::string JoinString(std::vector <std::string>& vTokens, const std::string& delimiter);
 	static std::string JoinString(std::string arrTokens[], const int& arrLength, const std::string& delimiter);
 	
+	//Operation (17):
+	//Revarse Words In String.
+	static std::string ReverseWordsInString(std::string& text, const std::string& delimiter);
+	std::string ReverseWordsInString(const std::string& delimiter);
 	
 };
